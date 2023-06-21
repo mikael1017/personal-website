@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Image from "next/image";
+import profileImg from "../public/profile.png";
 
 export default function Home() {
 	return (
@@ -54,7 +56,7 @@ export default function Home() {
 							<div>
 								<a
 									href="#"
-									className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+									className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-high hover:bg-white mt-4 lg:mt-0"
 								>
 									Resume
 								</a>
@@ -63,7 +65,7 @@ export default function Home() {
 					</nav>
 					<div className="text-center p-10">
 						<h2 className="text-5xl py-2 text-high">
-							Hi, I'm Jay. I'm a software engineer based in
+							Hello, I'm Jay. I'm a software engineer based in
 							Seattle, WA.
 						</h2>
 						<h3 className="text-2xl py-2 text-">
@@ -81,7 +83,34 @@ export default function Home() {
 						<AiFillGithub />
 						<AiFillLinkedin />
 					</div>
-					<div className=""></div>
+					<div className="relative bg-gradient-to-b mx-auto from-med rounded-t-full w-80 h-80">
+						<Image src={profileImg} alt="my profile" />
+					</div>
+				</section>
+
+				<section>
+					<div className="  text-center shadow-2xl p-10 rounded-xl m-10">
+						<h3 className="text-lg font-medium pt-8 pb-2">
+							About Me
+						</h3>
+						<p className="py-2">
+							I'm a software engineer based in Seattle, WA. I
+							started programming in 2019 and have been enjoying
+							it ever since. I'm currently working at Leafly as a
+							Software Engineer. I'm passionate about building
+							products that make a difference. I enjoy working
+							with React, TypeScript, and Node.js.
+						</p>
+					</div>
+					<div className="  text-center shadow-2xl p-10 rounded-xl m-10">
+						<div>
+							{/* <Image src={} alt="my projects" /> */}
+							<h2>Projects</h2>
+							<p>Creating a project is a great way to learn</p>
+						</div>
+					</div>
+
+					<div></div>
 				</section>
 			</main>
 		</div>
