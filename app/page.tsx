@@ -2,6 +2,11 @@ import Head from "next/head";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Image from "next/image";
 import profileImg from "../public/profile.png";
+import Window from "@/components/Window";
+import NostalgicWindow from "@/components/NostalgicWindow";
+import tennisBanner from "../public/tennis.webp"
+
+
 
 export default function Home() {
 	return (
@@ -20,18 +25,7 @@ export default function Home() {
 								Jaewoo Cho
 							</span>
 						</div>
-						{/* <div class="block lg:hidden">
-							<button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-								<svg
-									class="fill-current h-3 w-3"
-									viewBox="0 0 20 20"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<title>Menu</title>
-									<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-								</svg>
-							</button>
-						</div> */}
+					
 						<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 							<div className="text-sm lg:flex-grow">
 								<a
@@ -86,7 +80,7 @@ export default function Home() {
 					<div className="relative bg-gradient-to-b mx-auto from-med rounded-t-full w-80 h-80">
 						<Image src={profileImg} alt="my profile" />
 					</div>
-				</section>
+				</section>{}
 
 				<section>
 					<div className="  text-center shadow-2xl p-10 rounded-xl m-10">
@@ -109,8 +103,16 @@ export default function Home() {
 							<p>Creating a project is a great way to learn</p>
 						</div>
 					</div>
-
-					<div></div>
+				</section>
+				<section>
+					<div className="r">
+						<h3 className="text-3xl py-1">Portfolio</h3>
+						<Window></Window>
+						<div className="flex justify-center">
+							<NostalgicWindow banner={tennisBanner} name="Find your court" title="Find your tennis court" description="" 
+							link="https://astonishing-elf-6929de.netlify.app/" />
+						</div>
+					</div>
 				</section>
 			</main>
 		</div>
