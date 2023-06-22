@@ -4,9 +4,8 @@ import Image from "next/image";
 import profileImg from "../public/profile.png";
 import Window from "@/components/Window";
 import NostalgicWindow from "@/components/NostalgicWindow";
-import tennisBanner from "../public/tennis.webp"
-
-
+import tennisBanner from "../public/tennis.webp";
+import EmailForm from "@/components/EmailForm";
 
 export default function Home() {
 	return (
@@ -25,7 +24,7 @@ export default function Home() {
 								Jaewoo Cho
 							</span>
 						</div>
-					
+
 						<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 							<div className="text-sm lg:flex-grow">
 								<a
@@ -68,19 +67,23 @@ export default function Home() {
 							with React, TypeScript, and Node.js.
 						</h3>
 						<p>
-							I'm currently working at{" "}
-							<a href="https://www.leafly.com/">Leafly</a> as a
-							Software Engineer.
+							I'm currently studying Master's degree in Computer
+							Science at Northeastern University
 						</p>
 					</div>
 					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-800">
-						<AiFillGithub />
-						<AiFillLinkedin />
+						<a href="https://github.com/mikael1017">
+							<AiFillGithub />
+						</a>
+						<a href="https://www.linkedin.com/in/chojaewoo/">
+							<AiFillLinkedin />
+						</a>
 					</div>
 					<div className="relative bg-gradient-to-b mx-auto from-med rounded-t-full w-80 h-80">
 						<Image src={profileImg} alt="my profile" />
 					</div>
-				</section>{}
+				</section>
+				{}
 
 				<section>
 					<div className="  text-center shadow-2xl p-10 rounded-xl m-10">
@@ -109,9 +112,28 @@ export default function Home() {
 						<h3 className="text-3xl py-1">Portfolio</h3>
 						<Window></Window>
 						<div className="flex justify-center">
-							<NostalgicWindow banner={tennisBanner} name="Find your court" title="Find your tennis court" description="" 
-							link="https://astonishing-elf-6929de.netlify.app/" />
+							<NostalgicWindow
+								banner={tennisBanner}
+								name="Find your court"
+								title="Find your tennis court"
+								description=""
+								link="https://astonishing-elf-6929de.netlify.app/"
+							/>
 						</div>
+						<div className="flex justify-center">
+							<NostalgicWindow
+								banner={tennisBanner}
+								name=""
+								title=""
+								description=""
+								link=""
+							/>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div className="email">
+						<EmailForm />
 					</div>
 				</section>
 			</main>
