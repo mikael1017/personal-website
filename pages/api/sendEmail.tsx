@@ -1,8 +1,9 @@
 import nodemailer from "nodemailer";
+import { NextApiRequest, NextApiResponse } from "next";
 
-const handler = async (req, res) => {
-	console.log(req.body);
-	console.log("hello");
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+	// console.log(req.body);
+	// console.log("hello");
 	if (req.method === "POST") {
 		const { name, email, subject, message } = req.body;
 
@@ -29,8 +30,8 @@ const handler = async (req, res) => {
 			await transporter.sendMail(mailOptions);
 			res.status(200).json({ message: "Email sent successfully" });
 		} catch (error) {
-			console.error(error);
-			res.status(500).json({ error: error.message });
+			// console.error(error);
+			res.status(500).json({ error: "error sending email" });
 		}
 	}
 };

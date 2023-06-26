@@ -2,7 +2,13 @@ import React from "react";
 // import './NostalgicWindow.css'; // Create this CSS file
 import Image from "next/image";
 
-const NostalgicWindow = (props) => {
+const NostalgicWindow = (props: {
+	title: any;
+	description: any;
+	name: any;
+	link: any;
+	banner: any;
+}) => {
 	const { title, description, name, link, banner } = props;
 
 	return (
