@@ -28,19 +28,19 @@ export default function Home() {
 						<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 							<div className="text-sm lg:flex-grow">
 								<a
-									href="#responsive-header"
+									href="#about"
 									className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
 								>
 									About
 								</a>
 								<a
-									href="#responsive-header"
+									href="#projects"
 									className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
 								>
 									Projects
 								</a>
 								<a
-									href="#responsive-header"
+									href="#contact"
 									className="block mt-4 lg:inline-block lg:mt-0 hover:text-white"
 								>
 									Contact
@@ -85,7 +85,7 @@ export default function Home() {
 				</section>
 				{}
 
-				<section>
+				<section id="about">
 					<div className="  text-center shadow-2xl p-10 rounded-xl m-10">
 						<h3 className="text-lg font-medium pt-8 pb-2">
 							About Me
@@ -99,16 +99,18 @@ export default function Home() {
 							with React, TypeScript, and Node.js.
 						</p>
 					</div>
-					<div className="  text-center shadow-2xl p-10 rounded-xl m-10">
-						<div>
+				</section>
+				<section>
+					<div className=" flex justify-center text-center shadow-2xl p-10 rounded-xl m-10">
+						<div className="text-center">
 							{/* <Image src={} alt="my projects" /> */}
 							<h2>Projects</h2>
 							<p>Creating a project is a great way to learn</p>
 						</div>
 					</div>
 				</section>
-				<section>
-					<div className="r">
+				<section id="projects">
+					<div className="text-center">
 						<h3 className="text-3xl py-1">Portfolio</h3>
 						<Window></Window>
 						<div className="flex justify-center">
@@ -131,8 +133,8 @@ export default function Home() {
 						</div>
 					</div>
 				</section>
-				<section>
-					<div className="email">
+				<section id="contact">
+					<div className="email flex justify-center">
 						<EmailForm />
 					</div>
 				</section>

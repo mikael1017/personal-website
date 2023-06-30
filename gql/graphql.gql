@@ -1,0 +1,38 @@
+input UserInput {
+	id: ID
+	name: String
+}
+
+type Query {
+	users: [User!]
+	user(input: UserInput): User
+}
+
+type User {
+	id: ID!
+	name: String!
+	age: Int!l
+	height: Float!
+	isMarried: Boolean
+	friends: [User!]
+	videosPosted: [Video!]
+}
+
+type Video {
+	id: ID!
+	title: String!
+	description: String!
+}
+{
+	country(code: "US") {
+		name
+		native
+		emoji
+		currency
+        capital
+		languages {
+			code
+			name
+		}
+	}
+}

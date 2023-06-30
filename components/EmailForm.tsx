@@ -40,7 +40,7 @@ export default function EmailForm() {
 					<div className="window-control"></div>
 				</div>
 			</div>
-			<div className="nostalgic-window-content flex p-4 justify-center">
+			<div className="mt-4 nostalgic-window-content flex p-4 justify-center">
 				{status ? (
 					<p>Thanks for your message!</p>
 				) : (
@@ -48,7 +48,7 @@ export default function EmailForm() {
 						<div className="mb-2">
 							<label htmlFor="name">Subject</label>
 							<input
-								className="bg-low mx-2"
+								className="bg-low mx-2 "
 								id="name"
 								type="text"
 								value={subject}
@@ -75,10 +75,10 @@ export default function EmailForm() {
 								onChange={(e) => setEmail(e.target.value)}
 							/>
 						</div>
-						<div>
+						<div className="mb-2">
 							<label htmlFor="message">Message</label>
 							<textarea
-								className="mx-2"
+								className="mx-2 p-2"
 								id="message"
 								value={message}
 								onChange={(e) => setMessage(e.target.value)}
