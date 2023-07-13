@@ -21,9 +21,14 @@ const NostalgicWindow = (props: {
 					<div className="window-control"></div>
 				</div>
 			</div>
-			<div className="window-content">
-				<div className="banner">
-					<Image src={banner} alt="bannerimg" />
+			<div className="window-content justify-center">
+				<div className="banner justify-center">
+					<Image
+						src={banner}
+						alt="bannerimg"
+						width={476}
+						height={159}
+					/>
 				</div>
 				<div className="content">
 					<h1 className="text-3xl font-weight-900">{title}</h1>

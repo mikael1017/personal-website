@@ -5,6 +5,7 @@ import profileImg from "../public/profile.png";
 import Window from "@/components/Window";
 import NostalgicWindow from "@/components/NostalgicWindow";
 import tennisBanner from "../public/tennis.webp";
+import filterBanner from "../public/filter2.png";
 import EmailForm from "@/components/EmailForm";
 
 export default function Home() {
@@ -48,7 +49,7 @@ export default function Home() {
 							</div>
 							<div>
 								<a
-									href="#"
+									href="/resume.pdf"
 									className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-high hover:bg-white mt-4 lg:mt-0"
 								>
 									Resume
@@ -124,11 +125,11 @@ export default function Home() {
 						</div>
 						<div className="flex justify-center">
 							<NostalgicWindow
-								banner={tennisBanner}
-								name=""
-								title=""
-								description=""
-								link=""
+								banner={filterBanner}
+								name="Face filter app"
+								title="Face filter app"
+								description="Face filter app where it applies filter on person's face"
+								link="https://github.com/mikael1017/webcam_filter/tree/main"
 							/>
 						</div>
 					</div>
