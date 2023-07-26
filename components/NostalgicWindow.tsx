@@ -23,10 +23,14 @@ const NostalgicWindow = (props: {
 			</div>
 			<div className="window-content">
 				<div className="banner">
-					<Image src={banner} alt="bannerimg" />
+					<Image
+						src={banner}
+						alt="bannerimg"
+						style={{ width: "100%", height: "160px" }}
+					/>
 				</div>
 				<div className="content">
-					<h1 className="text-3xl font-weight-900">{title}</h1>
+					<h1 className="text-3xl font-weight-900 py-2">{title}</h1>
 					<p className="description">{description}</p>
 				</div>
 				<div>

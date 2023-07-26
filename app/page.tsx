@@ -6,6 +6,7 @@ import Window from "@/components/Window";
 import NostalgicWindow from "@/components/NostalgicWindow";
 import tennisBanner from "../public/tennis.webp";
 import EmailForm from "@/components/EmailForm";
+import filterBanner from "../public/filter.png";
 
 export default function Home() {
 	return (
@@ -124,9 +125,9 @@ export default function Home() {
 						</div>
 						<div className="flex justify-center">
 							<NostalgicWindow
-								banner={tennisBanner}
-								name=""
-								title=""
+								banner={filterBanner}
+								name="Face filter app"
+								title="Face filter app"
 								description=""
 								link=""
 							/>

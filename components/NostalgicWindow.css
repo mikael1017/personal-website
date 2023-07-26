@@ -1,35 +1,35 @@
 .nostalgic-window {
-  width: 500px;
-  height: 400px;
-  border: 2px solid black;
-  border-radius: 4px;
-  box-shadow: 0 0 10px black;
-  overflow: hidden;
+	width: 500px;
+	height: 400px;
+	border: 2px solid black;
+	border-radius: 4px;
+	box-shadow: 0 0 10px black;
+	overflow: hidden;
 }
 
 .window-title-bar {
-  height: 30px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
+	height: 30px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
 }
 
 .window-title {
-  flex: 1;
+	flex: 1;
 }
 
 .window-controls {
-  display: flex;
-  gap: 5px;
+	display: flex;
+	gap: 5px;
 }
 
 .window-control {
-  width: 10px;
-  height: 10px;
-  background-color: #888;
-  border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: #888;
+	border-radius: 50%;
 }
 
 .window-content {
-  padding: 10px;
+	padding: 10px;
 }
