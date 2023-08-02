@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import { classNames } from "tailwindcss-classnames";
 
 export default function EmailForm() {
 	const [name, setName] = useState("");

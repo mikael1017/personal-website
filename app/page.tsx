@@ -7,6 +7,7 @@ import NostalgicWindow from "@/components/NostalgicWindow";
 import tennisBanner from "../public/tennis.webp";
 import EmailForm from "@/components/EmailForm";
 import filterBanner from "../public/filter.png";
+import BlockWindow from "@/components/BlockWindow";
 
 export default function Home() {
 	return (
@@ -51,6 +52,7 @@ export default function Home() {
 								<a
 									href="/resume.pdf" // Relative URL to the resume file in the public folder
 									target="_blank"
+									rel="noopener noreferrer"
 									className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-high hover:bg-white mt-4 lg:mt-0"
 								>
 									Resume
@@ -83,31 +85,22 @@ export default function Home() {
 						<Image src={profileImg} alt="my profile" />
 					</div>
 				</section>
-				{}
-
 				<section id="about">
-					<div className="  text-center shadow-2xl p-10 rounded-xl m-10">
-						<h3 className="text-lg font-medium pt-8 pb-2">
-							About Me
-						</h3>
-						<p className="py-2">
-							I'm a software engineer based in Seattle, WA. I
+					<BlockWindow
+						title="About Me"
+						description="I'm a software engineer based in Seattle, WA. I
 							started programming in 2019 and have been enjoying
 							it ever since. I'm currently working at Leafly as a
 							Software Engineer. I'm passionate about building
 							products that make a difference. I enjoy working
-							with React, TypeScript, and Node.js.
-						</p>
-					</div>
+							with React, TypeScript, and Node.js."
+					></BlockWindow>
 				</section>
 				<section>
-					<div className=" flex justify-center text-center shadow-2xl p-10 rounded-xl m-10">
-						<div className="text-center">
-							{/* <Image src={} alt="my projects" /> */}
-							<h2>Projects</h2>
-							<p>Creating a project is a great way to learn</p>
-						</div>
-					</div>
+					<BlockWindow
+						title="Projects"
+						description="Creating a project is a great way to learn"
+					></BlockWindow>
 				</section>
 				<section id="projects">
 					<div className="text-center">
@@ -133,7 +126,7 @@ export default function Home() {
 						</div>
 					</div>
 				</section>
-				<section id="contact">
+				<section id="contact" className="my-10">
 					<h1 className="text-3xl text-center section title">
 						Contact Me
 					</h1>

@@ -29,14 +29,16 @@ const NostalgicWindow = (props: {
 						style={{ width: "100%", height: "160px" }}
 					/>
 				</div>
-				<div className="content">
+				<div className="content my-4">
 					<h1 className="text-3xl font-weight-900 py-2">{title}</h1>
 					<p className="description">{description}</p>
 				</div>
 				<div>
-					<div className="link">
+					<div className="link my-4">
 						<a
 							href={link}
+							target="_blank"
+							rel="noopener noreferrer"
 							className="inline-block text-sm bg-med px-4 py-2 leading-none border rounded text-black
                 border-med hover:border-transparent hover:text-low hover:bg-high mt-4 lg:mt-0"
 						>
