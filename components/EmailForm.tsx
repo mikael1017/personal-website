@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+import { classNames } from "tailwindcss-classnames";
 
 export default function EmailForm() {
 	const [name, setName] = useState("");
@@ -30,6 +31,7 @@ export default function EmailForm() {
 			setSubject("");
 		}
 	};
+
 	return (
 		<div className="nostalgic-window bg-med m-10 text-center">
 			<div className="window-title-bar bg-med border-b-2 border-black">
@@ -85,7 +87,7 @@ export default function EmailForm() {
 							/>
 						</div>
 						<button
-							className="text-med bg-low"
+							className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-high hover:bg-white mt-4 lg:mt-0"
 							type="submit"
 							disabled={!name || !subject || !email || !message}
 						>

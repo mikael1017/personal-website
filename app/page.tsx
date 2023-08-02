@@ -49,7 +49,8 @@ export default function Home() {
 							</div>
 							<div>
 								<a
-									href="#"
+									href="/resume.pdf" // Relative URL to the resume file in the public folder
+									target="_blank"
 									className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-high hover:bg-white mt-4 lg:mt-0"
 								>
 									Resume
@@ -64,13 +65,11 @@ export default function Home() {
 						</h2>
 						<h3 className="text-2xl py-2 text-">
 							Software developer with a passion for building
-							products that make a difference. I enjoy working
-							with React, TypeScript, and Node.js.
+							products that make a difference.
 						</h3>
-						<p>
-							I'm currently studying Master's degree in Computer
-							Science at Northeastern University
-						</p>
+						<a className="skills" href="#contact">
+							Contact me
+						</a>
 					</div>
 					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-800">
 						<a href="https://github.com/mikael1017">
@@ -119,7 +118,7 @@ export default function Home() {
 								banner={tennisBanner}
 								name="Find your court"
 								title="Find your tennis court"
-								description=""
+								description="Built a web app using react and express to "
 								link="https://astonishing-elf-6929de.netlify.app/"
 							/>
 						</div>
@@ -129,12 +128,15 @@ export default function Home() {
 								name="Face filter app"
 								title="Face filter app"
 								description=""
-								link=""
+								link="https://github.com/mikael1017/webcam_filter"
 							/>
 						</div>
 					</div>
 				</section>
 				<section id="contact">
+					<h1 className="text-3xl text-center section title">
+						Contact Me
+					</h1>
 					<div className="email flex justify-center">
 						<EmailForm />
 					</div>
