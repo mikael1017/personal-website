@@ -5,8 +5,8 @@ const BlockWindow = (props: { title: any; description: any }) => {
 
 	return (
 		<div className="  text-center shadow-2xl p-10 rounded-xl m-10">
-			<h3 className="text-lg font-medium pt-8 pb-2">{title}</h3>
-			<p className="py-2">{description}</p>
+			<h1 className="text-2xl pt-8 pb-2">{title}</h1>
+			<p className="py-2 text-lg">{description}</p>
 		</div>
 	);
 };

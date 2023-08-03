@@ -19,7 +19,7 @@ export default function Home() {
 			</Head>
 
 			<main className="bg-low font-burtons">
-				<section className=" bg-white-100 min-h-screen">
+				<section className=" bg-white-100">
 					<nav className="bg-med border-y-2 border-black flex items-center justify-between text-high  font-bold flex-wrap p-6">
 						<div className="flex items-center flex-shrink-0  mr-6">
 							<span className="font-semibold text-xl tracking-tight">
@@ -60,18 +60,17 @@ export default function Home() {
 							</div>
 						</div>
 					</nav>
+				</section>
+				<section>
 					<div className="text-center p-10">
 						<h2 className="text-5xl py-2 text-high">
-							Hello, I'm Jay. I'm a software engineer based in
-							Seattle, WA.
+							Hello I'm Jay. I'm a software engineer based in
+							Seattle, WA
 						</h2>
 						<h3 className="text-2xl py-2 text-">
-							Software developer with a passion for building
-							products that make a difference.
+							A passionate software engineer on a mission to
+							create a globally adored service that enriches lives
 						</h3>
-						<a className="skills" href="#contact">
-							Contact me
-						</a>
 					</div>
 					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-800">
 						<a href="https://github.com/mikael1017">
@@ -81,32 +80,37 @@ export default function Home() {
 							<AiFillLinkedin />
 						</a>
 					</div>
-					<div className="relative bg-gradient-to-b mx-auto from-med rounded-t-full w-80 h-80">
+					<div className="relative bg-gradient-to-b mx-auto from-med rounded-t-full w-80">
 						<Image src={profileImg} alt="my profile" />
 					</div>
 				</section>
 				<section id="about">
 					<BlockWindow
 						title="About Me"
-						description="I'm a software engineer based in Seattle, WA. I
-							started programming in 2019 and have been enjoying
-							it ever since. I'm currently working at Leafly as a
-							Software Engineer. I'm passionate about building
-							products that make a difference. I enjoy working
-							with React, TypeScript, and Node.js."
+						description="My journey began with the elegance of numbers and the beauty of mathematical proofs during my undergraduate years. Little did I know that this passion for problem-solving would lead me on an exhilarating path to the realm of computer science.
+						As I embarked on my master's journey in computer science, the boundless possibilities of technology opened before me like an uncharted universe. From algorithms that danced like symphonies to data structures that revealed hidden patterns, I found myself immersed in the wonders of this digital realm.
+						But theory alone could not satiate my hunger for creating tangible impact. I ventured into the realm of web application development, building bridges between ideas and reality. Each line of code I crafted was a testament to my determination to create meaningful solutions that enhance lives.
+						My adventure didn't end there; I embraced the challenges and joys of being a full-stack developer intern, where I honed my skills and gained invaluable experience working with diverse teams and projects."
 					></BlockWindow>
 				</section>
 				<section>
 					<BlockWindow
-						title="Projects"
-						description="Creating a project is a great way to learn"
+						title="Skills"
+						description="Skill include"
+					></BlockWindow>
+					<BlockWindow
+						title="Programming Languages"
+						description="Python, Java, C++, Javascript, HTML/CSS"
 					></BlockWindow>
 				</section>
 				<section id="projects">
 					<div className="text-center">
 						<h3 className="text-3xl py-1">Portfolio</h3>
-						<Window></Window>
-						<div className="flex justify-center">
+						<BlockWindow
+							title="Portfolio"
+							description=""
+						></BlockWindow>
+						<div className="flex justify-center ">
 							<NostalgicWindow
 								banner={tennisBanner}
 								name="Find your court"
