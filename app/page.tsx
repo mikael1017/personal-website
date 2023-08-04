@@ -8,6 +8,7 @@ import tennisBanner from "../public/tennis.webp";
 import EmailForm from "@/components/EmailForm";
 import filterBanner from "../public/filter.png";
 import BlockWindow from "@/components/BlockWindow";
+import ImageBlockWindow from "@/components/ImageBlockWindow";
 
 export default function Home() {
 	return (
@@ -98,10 +99,7 @@ export default function Home() {
 						title="Skills"
 						description="Skill include"
 					></BlockWindow>
-					<BlockWindow
-						title="Programming Languages"
-						description="Python, Java, C++, Javascript, HTML/CSS"
-					></BlockWindow>
+					<ImageBlockWindow></ImageBlockWindow>
 				</section>
 				<section id="projects">
 					<div className="text-center">
