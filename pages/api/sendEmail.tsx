@@ -19,7 +19,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 			from: process.env.EMAIL,
 			to: process.env.EMAIL,
 			subject: subject,
-			text: `Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`,
+			text: `Name: ${name}\n From Email: ${email}\n\n Message: ${message}`,
 		};
 
 		if (!name || !email || !subject || !message) {

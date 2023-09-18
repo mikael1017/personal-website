@@ -95,19 +95,15 @@ export default function Home() {
 					></BlockWindow>
 				</section>
 				<section>
-					<BlockWindow
-						title="Skills"
-						description="Skill include"
-					></BlockWindow>
 					<ImageBlockWindow></ImageBlockWindow>
 				</section>
 				<section id="projects">
 					<div className="text-center">
 						<h3 className="text-3xl py-1">Portfolio</h3>
-						<BlockWindow
+						{/* <BlockWindow
 							title="Portfolio"
 							description=""
-						></BlockWindow>
+						></BlockWindow> */}
 						<div className="flex justify-center ">
 							<NostalgicWindow
 								banner={tennisBanner}
