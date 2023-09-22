@@ -9,6 +9,7 @@ import EmailForm from "@/components/EmailForm";
 import filterBanner from "../public/filter.png";
 import BlockWindow from "@/components/BlockWindow";
 import ImageBlockWindow from "@/components/ImageBlockWindow";
+import extensionBanner from "../public/extension.png";
 
 export default function Home() {
 	return (
@@ -115,7 +116,7 @@ export default function Home() {
 						</div>
 						<div className="flex justify-center">
 							<NostalgicWindow
-								banner={filterBanner}
+								banner={extensionBanner}
 								name="Chrome tab manager"
 								title="Chrome tab manager"
 								description="Manage all opened tabs in chrome"
