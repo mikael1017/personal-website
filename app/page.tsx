@@ -110,7 +110,7 @@ export default function Home() {
 								banner={tennisBanner}
 								name="Find your court"
 								title="Find your tennis court"
-								description="Built a web app using react and express to "
+								description=""
 								link="https://astonishing-elf-6929de.netlify.app/"
 							/>
 						</div>
