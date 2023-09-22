@@ -116,6 +116,15 @@ export default function Home() {
 						<div className="flex justify-center">
 							<NostalgicWindow
 								banner={filterBanner}
+								name="Chrome tab manager"
+								title="Chrome tab manager"
+								description="Manage all opened tabs in chrome"
+								link="https://github.com/mikael1017/chrome_extension"
+							/>
+						</div>
+						<div className="flex justify-center">
+							<NostalgicWindow
+								banner={filterBanner}
 								name="Face filter app"
 								title="Face filter app"
 								description=""
