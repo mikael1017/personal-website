@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GamePageNavBar } from "@/components/GamePageNavBar";
+import "../../styles/globals.css";
 
 export default function Race() {
 	const [numPlayers, setNumPlayers] = useState(0);
@@ -45,42 +46,44 @@ export default function Race() {
 
 	return (
 		<div>
-			<section>
-				<GamePageNavBar />
-			</section>
-			<section>
-				<div className="App">
-					<h1>Racing Game</h1>
-					<label>
-						Number of Players:
-						<input
-							type="number"
-							value={numPlayers}
-							onChange={(e) =>
-								setNumPlayers(parseInt(e.target.value))
-							}
-						/>
-					</label>
-					<button onClick={initializePlayers}>
-						Initialize Players
-					</button>
-					<button onClick={startRace}>Start Race</button>
-					{winner && <h2>{winner.name} wins!</h2>}
-					<div className="race-track">
-						{players.map((player) => (
-							<div
-								key={player.id}
-								className="player"
-								style={{
-									left: `${player.position}%`,
-								}}
-							>
-								{player.name}
-							</div>
-						))}
+			<main className="bg-low font-burtons">
+				<section>
+					<GamePageNavBar />
+				</section>
+				<section>
+					<div className="App">
+						<h1>Racing Game</h1>
+						<label>
+							Number of Players:
+							<input
+								type="number"
+								value={numPlayers}
+								onChange={(e) =>
+									setNumPlayers(parseInt(e.target.value))
+								}
+							/>
+						</label>
+						<button onClick={initializePlayers}>
+							Initialize Players
+						</button>
+						<button onClick={startRace}>Start Race</button>
+						{winner && <h2>{winner.name} wins!</h2>}
+						<div className="race-track">
+							{players.map((player) => (
+								<div
+									key={player.id}
+									className="player"
+									style={{
+										left: `${player.position}%`,
+									}}
+								>
+									{player.name}
+								</div>
+							))}
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</main>
 		</div>
 	);
 }

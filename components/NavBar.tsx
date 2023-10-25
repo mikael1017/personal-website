@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import React from "react";
 
 export const NavBar = () => {
 	return (
@@ -25,9 +26,15 @@ export const NavBar = () => {
 					</a>
 					<a
 						href="#contact"
-						className="block mt-4 lg:inline-block lg:mt-0 hover:text-white"
+						className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
 					>
 						Contact
+					</a>
+					<a
+						href="/games/race" // Relative URL to the resume file in the public folder
+						className="block mt-4 lg:inline-block lg:mt-0 hover:text-white"
+					>
+						Game
 					</a>
 				</div>
 				<div>
