@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import React from "react";
+import Link from "next/link";
 
 export const NavBar = () => {
 	return (
@@ -12,30 +13,30 @@ export const NavBar = () => {
 
 			<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 				<div className="text-sm lg:flex-grow">
-					<a
+					<Link
 						href="#about"
 						className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
 					>
 						About
-					</a>
-					<a
+					</Link>
+					<Link
 						href="#projects"
 						className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
 					>
 						Projects
-					</a>
-					<a
+					</Link>
+					<Link
 						href="#contact"
 						className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4"
 					>
 						Contact
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/games/race" // Relative URL to the resume file in the public folder
 						className="block mt-4 lg:inline-block lg:mt-0 hover:text-white"
 					>
 						Game
-					</a>
+					</Link>
 				</div>
 				<div>
 					<a

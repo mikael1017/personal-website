@@ -1,11 +1,26 @@
 import React, { useState } from "react";
-import { GamePageNavBar } from "@/components/GamePageNavBar";
 import "../../styles/globals.css";
+import { GamePageNavBar } from "@/components/GamePageNavBar";
 
 export default function Race() {
 	const [numPlayers, setNumPlayers] = useState(0);
-	const [players, setPlayers] = useState([]);
-	const [winner, setWinner] = useState(null);
+	const [players, setPlayers] = useState<
+		{
+			id: number;
+			score: number;
+			name: string;
+			speed: number;
+			position: number;
+		}[]
+	>([]);
+
+	const [winner, setWinner] = useState<{
+		id: number;
+		score: number;
+		name: string;
+		speed: number;
+		position: number;
+	} | null>(null);
 
 	const initializePlayers = () => {
 		const newPlayers = [];
@@ -39,7 +54,9 @@ export default function Race() {
 				const winningPlayer = updatedPlayers.find(
 					(player) => player.position >= 100
 				);
-				setWinner(winningPlayer);
+				if (winningPlayer) {
+					setWinner(winningPlayer);
+				}
 			}
 		}, 100); // Adjust interval speed as needed
 	};
