@@ -10,6 +10,7 @@ import filterBanner from "../public/filter.png";
 import BlockWindow from "@/components/BlockWindow";
 import ImageBlockWindow from "@/components/ImageBlockWindow";
 import extensionBanner from "../public/extension.png";
+import driveBanner from "../public/drive_ai.png";
 import { NavBar } from "@/components/NavBar";
 
 export default function Home() {
@@ -74,6 +75,15 @@ export default function Home() {
 								title="Find your tennis court"
 								description=""
 								link="https://astonishing-elf-6929de.netlify.app/"
+							/>
+						</div>
+						<div className="flex justify-center">
+							<NostalgicWindow
+								banner={driveBanner}
+								name="Autonomous drive AI"
+								title="Self-driving AI"
+								description="Built an AI using NEAT-python to drive a car in a 2D environment that is built using pygame library"
+								link="https://github.com/mikael1017/driveAI"
 							/>
 						</div>
 						<div className="flex justify-center">
